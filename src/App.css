@@ -1,0 +1,36 @@
+#main {
+    max-width: 960px;
+    margin: auto;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+#countLabel {
+    margin-left: 5px;
+    font-size: 35px;
+}
+button {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 3px;
+    margin-left: 0px;
+}
+.incBtn {
+    color: darkgreen;
+    background-color: rgb(1, 187, 1);
+}
+.decBtn {
+    color: darkred;
+    background-color: red;
+}
+#Go {
+    background-image: linear-gradient(to right, blue, white, gold);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
