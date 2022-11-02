@@ -7,7 +7,7 @@ const MyCounter = (props) => {
     // const count = document.getElementById("count");
     // let countState = 77;
 
-    const [countState, setCountState] = useState(77)
+    const [countState, setCountState] = useState(23)
 
     function incrementCount() {
         // countState++
@@ -18,9 +18,9 @@ const MyCounter = (props) => {
     }
     return (
         <div>
-            <div>{countState}</div>
-            <button onClick={incrementCount}>+{props.incBy}</button>
-            <button onClick={decrementCount}>-{props.decBy}</button>
+            <div id="countLabel">{countState}</div>
+            <button class="incBtn" onClick={incrementCount}>+{props.incBy}</button>
+            <button class="decBtn" onClick={decrementCount}>-{props.decBy}</button>
         </div>
     )
 }
