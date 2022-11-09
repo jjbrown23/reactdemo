@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const MyCounter = (props) => {
 
@@ -8,6 +8,13 @@ const MyCounter = (props) => {
     // let countState = 77;
 
     const [countState, setCountState] = useState(23)
+
+    useEffect(() => {
+        if (countState >= 45) {
+            alert("Resetting the count back to 23");
+            setCountState(23);
+        }
+    }, [countState])
 
     function incrementCount() {
         // countState++
